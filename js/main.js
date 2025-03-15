@@ -363,7 +363,7 @@ Version:	1.1
     ).css("height", maxHeight + "px");
 
   // Charger le JSON des intervenants
-    $.getJSON("./json/speakers.json", function (data) {
+    $.getJSON("./json/Speakers.json", function (data) {
       let speakersHtml = "";
       data.sort((a, b) => {
         // Trier par "Denomination" : "Pr" avant "Dr"
