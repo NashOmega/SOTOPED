@@ -362,8 +362,8 @@ Version:	1.1
       ".schedule .container .schedule-inner .single-schedule .single-content p span"
     ).css("height", maxHeight + "px");
 
-  // Charger le JSON des intervenants
-    $.getJSON("/json/speakers.json", function (data) {
+    // Charger le JSON des intervenants
+    $.getJSON("./json/speakers.json", function (data) {
       let speakersHtml = "";
       data.sort((a, b) => {
         // Trier par "Denomination" : "Pr" avant "Dr"
