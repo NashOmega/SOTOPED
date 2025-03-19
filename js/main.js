@@ -351,6 +351,10 @@ Version:	1.1
       window.open("https://forms.gle/qYwcPsiZXhpwx9Wn6", "_blank");
     });
 
+    clickEvents();
+  });
+
+  function clickEvents() {
     $("#CongressPr").on("click", function (e) {
       e.preventDefault();
       downloadFile(
@@ -398,7 +402,7 @@ Version:	1.1
         "Modèle PowerPoint de communication exigé_Congrès SOTOPED 2025.pptx"
       );
     });
-  });
+  }
 
   function downloadFile(fileUrl, fileName) {
     var link = document.createElement("a");
@@ -408,6 +412,7 @@ Version:	1.1
     link.click();
     setTimeout(() => {
       document.body.removeChild(link);
+      clickEvents();
     }, 100);
   }
 
