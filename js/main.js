@@ -351,10 +351,6 @@ Version:	1.1
       window.open("https://forms.gle/qYwcPsiZXhpwx9Wn6", "_blank");
     });
 
-    clickEvents();
-  });
-
-  function clickEvents() {
     $("#CongressPr").on("click", function (e) {
       e.preventDefault();
       downloadFile(
@@ -394,15 +390,24 @@ Version:	1.1
         "Livre des résumés du 6e congrès de la SOTOPED.pdf"
       );
     });
-    $(".communicationModel").on("click", function (e) {
+
+    $(".eposterModel").on("click", function (e) {
       e.preventDefault();
       downloadFile("./assets/Modèle eposter.pptx", "Modèle eposter.pptx");
+    });
+
+    $(".communicationModel").on("click", function (e) {
+      e.preventDefault();
       downloadFile(
         "./assets/Modèle PowerPoint de communication exigé_Congrès SOTOPED 2025.pptx",
         "Modèle PowerPoint de communication exigé_Congrès SOTOPED 2025.pptx"
       );
     });
-  }
+
+    $(".eventPhotos").on("click", function (e) {
+      e.preventDefault();
+    });
+  });
 
   function downloadFile(fileUrl, fileName) {
     var link = document.createElement("a");
