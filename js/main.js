@@ -351,6 +351,15 @@ Version:	1.1
       window.open("https://forms.gle/qYwcPsiZXhpwx9Wn6", "_blank");
     });
 
+    $(".AllCertificates").on("click", function (e) {
+      e.preventDefault();
+    });
+
+    $(".Hostels").on("click", function (e) {
+      e.preventDefault();
+      window.location.href = "hostels.html";
+    });
+
     $("#CongressPr").on("click", function (e) {
       e.preventDefault();
       downloadFile(
@@ -373,14 +382,6 @@ Version:	1.1
         "./assets/Programme du Pré-congrès Néphrologie.pdf",
         "Programme du Pré-congrès Néphrologie.pdf"
       );
-    });
-
-    $(".AllCertificates").on("click", function (e) {
-      e.preventDefault();
-    });
-
-    $(".Hostels").on("click", function (e) {
-      e.preventDefault();
     });
 
     $(".resumeBook").on("click", function (e) {
@@ -439,59 +440,5 @@ Version:	1.1
     $(
       ".schedule .container .schedule-inner .single-schedule .single-content p span"
     ).css("height", maxHeight + "px");
-
-    // Charger le JSON des intervenants
-    $.getJSON("./json/speakers.json", function (data) {
-      let speakersHtml = "";
-      data.sort((a, b) => {
-        // Trier par "Denomination" : "Pr" avant "Dr"
-        if (a.Denomination !== b.Denomination) {
-          return a.Denomination === "Pr" ? -1 : 1;
-        }
-        // Trier ensuite par "Name" alphabétiquement
-        return a.Name.localeCompare(b.Name);
-      });
-      // Boucler sur les données et construire le HTML
-      data.forEach(function (speaker) {
-        speakersHtml += `
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-body">
-                            <div class="news-content">
-                                <h2>${speaker.Denomination} ${speaker.Name}</h2>
-                                <p class="text">${speaker.Title}</p>
-                                <p class="place">${speaker.Provenance}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-            `;
-      });
-
-      // Insérer le HTML dans la div #speakersList
-      $("#speakersList").html(speakersHtml);
-
-      setTimeout(function () {
-        let maxHeight = 0;
-
-        // Trouver la plus grande hauteur
-        $("#speakersList .single-news .news-content .text").each(function () {
-          let currentHeight = $(this).outerHeight();
-          if (currentHeight > maxHeight) {
-            maxHeight = currentHeight;
-          }
-        });
-
-        // Appliquer la hauteur maximale trouvée à tous les blocs
-        $("#speakersList .single-news .news-content .text").css(
-          "height",
-          maxHeight + "px"
-        );
-      }, 200);
-    }).fail(function () {
-      console.error("Erreur lors du chargement du fichier JSON.");
-    });
   });
 })(jQuery);

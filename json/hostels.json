@@ -1,0 +1,102 @@
+[
+  {
+    "Name": "CIKA Golden Hotel and Suites",
+    "Address": "Quartier administratif de Lomé, Boulevard du 13 Janvier",
+    "Phone": "+228 22 53 01 53 / 70 59 01 71",
+    "Mail": "contact@goldenhotelandsuites.com",
+    "Website": "https://goldenhotelandsuites.com/",
+    "Distance": "400 m",
+    "NormalizedDistance": 0.4,
+    "Estimation": "5 min à pied"
+  },
+  {
+    "Name": "Hôtel Merveille Lomé",
+    "Address": "Avenue Maman Ndanida, Hollando, Lomé",
+    "Phone": "+228 70 25 25 06",
+    "Mail": "",
+    "Website": "https://www.goafricaonline.com/tg/4711-royal-hotels-lome-togo",
+    "Distance": "2,3 Km",
+    "NormalizedDistance": 2.3,
+    "Estimation": "3 min en voiture"
+  },
+  {
+    "Name": "Hôtel Excellence",
+    "Address": "Rue des Hydrocarbures, non loin de Togo gaz, à côté de la station T-Oil Tokoin Soted",
+    "Phone": "(+228) 22 22 11 05 / 96 84 54 94 / 90 20 81 30",
+    "Mail": "hotelexcellence@yahoo.fr",
+    "Website": "www.hotelexcellence-togo.com",
+    "Distance": "3,8 Km",
+    "NormalizedDistance": 3.8,
+    "Estimation": "5 min en voiture"
+  },
+  {
+    "Name": "Hôtel Yabisso",
+    "Address": "Ave De La Liberation, Lome, Togo, Lomé",
+    "Phone": "22207939",
+    "Mail": "hotelyabisso@gmail.com",
+    "Website": "http://www.hotelyabisso.com/",
+    "Distance": "1,7 Km",
+    "NormalizedDistance": 1.7,
+    "Estimation": "3 min en voiture - 20 min à pied"
+  },
+  {
+    "Name": "Hôtel Sancta Maria",
+    "Address": "Boulevard du mono 08 B.P. 80212 Lomé - TOGO, Lomé",
+    "Phone": "22229292",
+    "Mail": "",
+    "Website": "http://hotelsanctamaria.com/",
+    "Distance": "4,1 Km",
+    "NormalizedDistance": 4.1,
+    "Estimation": "5 min en voiture"
+  },
+  {
+    "Name": "Guest house Lumen",
+    "Address": "9 Rue Adabewere Ancienne Rue Pasteur Baeta Nyekonakpoe, Maritime Region 2122",
+    "Phone": "+228 70 06 24 44",
+    "Mail": "",
+    "Website": "",
+    "Distance": "1 Km",
+    "NormalizedDistance": 1,
+    "Estimation": "2 min en voiture ; 9 min à pied"
+  },
+  {
+    "Name": "Hôtel M’Rode",
+    "Address": "88 Rue d'Assoli, Golfe, Maritime",
+    "Phone": "+228 22 20 70 00",
+    "Mail": "",
+    "Website": "https://hotelmrode.com/hotel-mrode/",
+    "Distance": "4,1 Km",
+    "NormalizedDistance": 4.1,
+    "Estimation": "5 min en voiture"
+  },
+  {
+    "Name": "Bravia Hotel Lomé",
+    "Address": "125 Bd Felix H, Lome, Maritime Region 2978",
+    "Phone": "+228 22 21 59 89",
+    "Mail": "",
+    "Website": "https://www.braviahotels.com/home-bravia-lome",
+    "Distance": "4,2 Km",
+    "NormalizedDistance": 4.2,
+    "Estimation": "6 min en voiture"
+  },
+  {
+    "Name": "Onomo Hôtel",
+    "Address": "Boulevard du Mono, Lomé",
+    "Phone": "+228 22 53 63 00",
+    "Mail": "",
+    "Website": "https://onomolome.com-hotel.website/fr/",
+    "Distance": "5,4 Km",
+    "NormalizedDistance": 5.4,
+    "Estimation": "7 min en voiture"
+  },
+  {
+    "Name": "Rosalie’s Suites",
+    "Address": "Boulevard circulaire côté festival des glaces, Lomé",
+    "Phone": "+228 22 21 72 17",
+    "Mail": "",
+    "Website": "",
+    "Distance": "3,1 Km",
+    "NormalizedDistance": 3.1,
+    "Estimation": "4 min en voiture"
+  }
+]
