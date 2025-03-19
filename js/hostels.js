@@ -24,7 +24,7 @@
                     <div class="single-news">
                         <div class="news-body">
                             <div class="news-content">
-                                <a href="${websiteUrl}"><h2>${hostel.Name}</h2></a>
+                                <a href="${websiteUrl}" target="_blank"><h2>${hostel.Name}</h2></a>
                                 <p class="text hostelAdress">
                                 ${hostel.Address}
                                 </p>

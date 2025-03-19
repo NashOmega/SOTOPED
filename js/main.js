@@ -351,6 +351,13 @@ Version:	1.1
       window.open("https://forms.gle/qYwcPsiZXhpwx9Wn6", "_blank");
     });
 
+    $(".eventPhotos").on("click", function (e) {
+      e.preventDefault();
+      window.open(
+        "https://drive.google.com/drive/folders/1BV_rvvDsclJSvWlIU_eEtkvqIM8ZNPi0?usp=sharing",
+        "_blank"
+      );
+    });
     $(".AllCertificates").on("click", function (e) {
       e.preventDefault();
     });
@@ -403,10 +410,6 @@ Version:	1.1
         "./assets/Modèle PowerPoint de communication exigé_Congrès SOTOPED 2025.pptx",
         "Modèle PowerPoint de communication exigé_Congrès SOTOPED 2025.pptx"
       );
-    });
-
-    $(".eventPhotos").on("click", function (e) {
-      e.preventDefault();
     });
   });
 
