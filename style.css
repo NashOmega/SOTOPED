@@ -594,6 +594,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.slider .single-slider:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0.5;
+}
+
 .slider .single-slider .text {
   margin-top: 120px;
 }
@@ -601,7 +612,7 @@ body {
   margin-top: 150px;
 }
 .slider .single-slider h1 {
-  color: white;
+  color: #2c2d3f;
   font-size: 38px;
   font-weight: 700;
   margin: 0;
@@ -612,7 +623,7 @@ body {
   color: #02694d;
 }
 .slider .single-slider p {
-  color: white;
+  color: #2c2d3f;
   margin-top: 27px;
   font-weight: 400;
   font-size: 22px;
