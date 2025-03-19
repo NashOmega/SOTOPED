@@ -406,7 +406,9 @@ Version:	1.1
     link.download = fileName;
     document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);
+    setTimeout(() => {
+      document.body.removeChild(link);
+    }, 100);
   }
 
   $(window).on("load", function () {
