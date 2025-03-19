@@ -90,11 +90,11 @@
 							<nav class="navigation">
 								<ul class="nav menu">
 									<li class="active"><a href="#">Accueil</a></li>
-									<li><a href="#blog">Orateurs</a></li>
-									<li><a href="#organs">Organes</a></li>
 									<li><a href="#mediaTech">Médiathèque</a></li>
+									<li><a href="#organs">Organes</a></li>
+									<li><a href="#blog">Orateurs</a></li>
 									<li><a href="#contactUs">Contact</a></li>
-									<li><a href="#footer">À propos</a></li>
+									<li><a href="#about">À propos</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -102,7 +102,7 @@
 					</div>
 					<div class="col-lg-2 col-12">
 						<div class="get-quote">
-							<a href="appointment.html" class="btn">Inscription</a>
+							<a href="" class="btn Inscription">Inscription</a>
 						</div>
 					</div>
 				</div>
@@ -126,8 +126,8 @@
 									style="color: red;">PED</span></h1>
 							<p>Hotêl 2 Février du 16 au 18 Avril</p>
 							<div class="button">
-								<a href="#" class="btn">Inscription</a>
-								<a href="#" class="btn primary">Contact</a>
+								<a href="#" class="btn Inscription">Inscription</a>
+								<a href="#contactUs" class="btn primary">Contact</a>
 							</div>
 						</div>
 					</div>
@@ -145,7 +145,7 @@
 									style="color: red;">PED</span></h1>
 							<p>Hotêl 2 Février du 16 au 18 Avril</p>
 							<div class="button">
-								<a href="#" class="btn">Inscription</a>
+								<a href="#" class="btn Inscription">Inscription</a>
 								<a href="#" class="btn primary">Contact</a>
 							</div>
 						</div>
@@ -164,7 +164,7 @@
 									style="color: red;">PED</span></h1>
 							<p>Hotêl 2 Février du 16 au 18 Avril</p>
 							<div class="button">
-								<a href="#" class="btn">Inscription</a>
+								<a href="#" class="btn Inscription">Inscription</a>
 								<a href="#" class="btn primary">Contact</a>
 							</div>
 						</div>
@@ -198,7 +198,8 @@
 									<br />
 									<i>14 au 15 Avril : Lomé</i>
 								</p>
-								<a href="#">Programme<i class="fa fa-long-arrow-right"></i></a>
+								<a href="#" id="NephrologicPreCongressPr">Programme<i
+										class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -220,7 +221,7 @@
 									<br />
 									<i>15 avril 2025 : 14h-18h à l’EAM au CHU-SO</i>
 								</p>
-								<a href="#">Programme<i class="fa fa-long-arrow-right"></i></a>
+								<a href="#" id="PainPreCongressPr">Programme<i class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -241,7 +242,7 @@
 									<br />
 									<i>16 au 18 avril 2025 : Hôtel 2 Février</i>
 								</p>
-								<a href="#">Programme<i class="fa fa-long-arrow-right"></i></a>
+								<a href="#" id="CongressPr">Programme<i class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -313,58 +314,6 @@
 </section>
 <!--/ End Feautes -->
 
-<!-- Start Fun-facts -->
-<div id="fun-facts" class="fun-facts section overlay" style="display: none;">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont icofont-home"></i>
-					<div class="content">
-						<span class="counter">3468</span>
-						<p>Hospital Rooms</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont icofont-user-alt-3"></i>
-					<div class="content">
-						<span class="counter">557</span>
-						<p>Specialist Doctors</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont-simple-smile"></i>
-					<div class="content">
-						<span class="counter">4379</span>
-						<p>Happy Patients</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont icofont-table"></i>
-					<div class="content">
-						<span class="counter">32</span>
-						<p>Years of Experience</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-		</div>
-	</div>
-</div>
-<!--/ End Fun-facts -->
 </br>
 <!-- Start Call to action -->
 <section class="call-action overlay" data-stellar-background-ratio="0.5">
@@ -375,7 +324,7 @@
 					<h2>Réclamations</h2>
 					<p>Pour toute rectification sur votre badge ou votre attestation</p>
 					<div class="button">
-						<a href="#" class="btn">Cliquez Ici</a>
+						<a href="#" class="btn" id="Claim">Cliquez Ici</a>
 					</div>
 				</div>
 			</div>
@@ -384,132 +333,52 @@
 </section>
 <!--/ End Call to action -->
 
-<!-- Start portfolio -->
-<section class="portfolio section" style="display: none;">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12 col-12">
-				<div class="owl-carousel portfolio-slider">
-					<div class="single-pf">
-						<img src="img/pf1.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf2.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf3.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf4.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf1.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf2.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf3.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf4.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--/ End portfolio -->
-
 <!-- Start service -->
 <section class="services section" id="mediaTech">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title">
-					<h2>We Offer Different Services To Improve Your Health</h2>
+					<h2>Métiathèque</h2>
 					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-12">
+			<div class="col-lg-6 col-md-6 col-12">
 				<!-- Start Single Service -->
 				<div class="single-service">
-					<i class="icofont icofont-prescription"></i>
-					<h4><a href="service-details.html">General Treatment</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-						imperdiet. </p>
+					<i class="icofont icofont-presentation communicationModel"></i>
+					<h4><a class="communicationModel">Modèles Communications et E-Poster</a></h4>
+					<p>Retrouvez ici le format des présentations orales et affichées à respecter</p>
 				</div>
 				<!-- End Single Service -->
 			</div>
-			<div class="col-lg-4 col-md-6 col-12">
+			<div class="col-lg-6 col-md-6 col-12">
 				<!-- Start Single Service -->
 				<div class="single-service">
-					<i class="icofont icofont-tooth"></i>
-					<h4><a href="service-details.html">Teeth Whitening</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-						imperdiet. </p>
+					<i class="icofont icofont-book resumeBook"></i>
+					<h4><a class="resumeBook">Livre des résumés</a></h4>
+					<p>Retrouvez ici le livre des résumés du congrès</p>
 				</div>
 				<!-- End Single Service -->
 			</div>
-			<div class="col-lg-4 col-md-6 col-12">
+			<div class="col-lg-6 col-md-6 col-12">
 				<!-- Start Single Service -->
 				<div class="single-service">
-					<i class="icofont icofont-heart-alt"></i>
-					<h4><a href="service-details.html">Heart Surgery</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-						imperdiet. </p>
+					<i class="icofont icofont-5-star-hotel Hostels"></i>
+					<h4><a class="Hostels">Hôtels à proximité</a></h4>
+					<p>Retrouvez la liste des hotêls à proximité du site du congrès</p>
 				</div>
 				<!-- End Single Service -->
 			</div>
-			<div class="col-lg-4 col-md-6 col-12">
+			<div class="col-lg-6 col-md-6 col-12">
 				<!-- Start Single Service -->
 				<div class="single-service">
-					<i class="icofont icofont-listening"></i>
-					<h4><a href="service-details.html">Ear Treatment</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-						imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-eye-alt"></i>
-					<h4><a href="service-details.html">Vision Problems</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-						imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-blood"></i>
-					<h4><a href="service-details.html">Blood Transfusion</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut
-						imperdiet. </p>
+					<i class="icofont icofont-certificate AllCertificates"></i>
+					<h4><a class="AllCertificates">Mes attestations</a></h4>
+					<p>Retrouvez ici la liste de vos attestations de participation et éventuellement de communication
+						disponible à partir du <span style="color: #a01919;">18 Avril à midi</span></p>
 				</div>
 				<!-- End Single Service -->
 			</div>
@@ -524,7 +393,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title">
-					<h2>Organes de la SOTOPED</h2>
+					<h2>Organes</h2>
 				</div>
 			</div>
 		</div>
@@ -583,8 +452,6 @@
 </section>
 <!--/ End Pricing Table -->
 
-
-
 <!-- Start Blog Area -->
 <section class="blog section" id="blog">
 	<div class="container">
@@ -606,43 +473,182 @@
 
 <!-- Start clients -->
 <div class="clients">
+</div>
+<!--/Ens clients -->
+
+<!-- Start Newsletter Area -->
+<section class="section clients-logo">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-12">
-				<div class="owl-carousel clients-slider">
-					<div class="single-clients">
-						<img src="img/client1.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client2.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client3.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client4.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client5.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client1.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client2.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client3.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client4.png" alt="#">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+					<div class="owl-carousel clients-slider">
+						<div class="single-clients">
+							<img src="img/logo CPA.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/logo ipna.jpg" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/logo armoirie.jpg" alt="#">
+
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+<!-- /End Newsletter Area -->
+
+<!-- Footer Area -->
+<footer id="footer" class="footer ">
+	<!-- Footer Top -->
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-16 col-md-6 col-12" id="about">
+					<div class="single-footer">
+						<h2>À propos</h2>
+						<p>La Société Togolaise de Pédiatrie (SOTOPED) est une entité nationale dont le but est
+							d'assurer une bonne éducation, une
+							bonne formation et une bonne santé pour tous les enfants. Ainsi, sa mission principale est
+							d'entreprendre et de mener
+							des perspectives et des actions ayant pour finalité de promouvoir des conditions de vie,
+							surtout sanitaires, stables
+							pour tout enfant</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12" style="display: none;">
+					<div class="single-footer f-link">
+						<h2>Quick Links</h2>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<ul>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+									</li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+									</li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+									</li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our
+											Cases</a></li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other
+											Links</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<ul>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a>
+									</li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a>
+									</li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a>
+									</li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact
+											Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12" id="contactUs">
+					<div class="single-footer">
+						<h2>Nous contacter</h2>
+						<p>Mail :&nbsp;&nbsp;&nbsp; <a
+								href="mailto:congres.sotoped@gmail.com">congres.sotoped@gmail.com</a>
+						</p>
+						<p>Tel &nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; +228 <a href="tel:+228 92006666">92006666</a> / <a
+								href="tel:+228 99922020">99922020</a> / <a href="tel:+228 91620204">91620204</a> / <a
+								href="tel:+228 90020044">90020044</a></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-12" style="display: none;">
+					<div class="single-footer">
+						<h2>Newsletter</h2>
+						<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit
+							amet, consectetur adipisicing elit,</p>
+						<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+							<input name="email" placeholder="Email Address" class="common-input"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+								required="" type="email">
+							<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Footer Top -->
+	<!-- Copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+					<div class="copyright-content">
+						<p>© Copyright 2025</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Copyright -->
+</footer>
+<!--/ End Footer Area -->
+
+<!-- Start Fun-facts -->
+<div id="fun-facts" class="fun-facts section overlay" style="display: none;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-12">
+				<!-- Start Single Fun -->
+				<div class="single-fun">
+					<i class="icofont icofont-home"></i>
+					<div class="content">
+						<span class="counter">3468</span>
+						<p>Hospital Rooms</p>
+					</div>
+				</div>
+				<!-- End Single Fun -->
+			</div>
+			<div class="col-lg-3 col-md-6 col-12">
+				<!-- Start Single Fun -->
+				<div class="single-fun">
+					<i class="icofont icofont-user-alt-3"></i>
+					<div class="content">
+						<span class="counter">557</span>
+						<p>Specialist Doctors</p>
+					</div>
+				</div>
+				<!-- End Single Fun -->
+			</div>
+			<div class="col-lg-3 col-md-6 col-12">
+				<!-- Start Single Fun -->
+				<div class="single-fun">
+					<i class="icofont-simple-smile"></i>
+					<div class="content">
+						<span class="counter">4379</span>
+						<p>Happy Patients</p>
+					</div>
+				</div>
+				<!-- End Single Fun -->
+			</div>
+			<div class="col-lg-3 col-md-6 col-12">
+				<!-- Start Single Fun -->
+				<div class="single-fun">
+					<i class="icofont icofont-table"></i>
+					<div class="content">
+						<span class="counter">32</span>
+						<p>Years of Experience</p>
+					</div>
+				</div>
+				<!-- End Single Fun -->
+			</div>
+		</div>
+	</div>
 </div>
-<!--/Ens clients -->
+<!--/ End Fun-facts -->
 
 <!-- Start Appointment -->
 <section class="appointment" style="display: none;">
@@ -737,125 +743,61 @@
 </section>
 <!-- End Appointment -->
 
-<!-- Start Newsletter Area -->
-<section class="newsletter section" id="contactUs">
+<!-- Start portfolio -->
+<section class="portfolio section" style="display: none;">
 	<div class="container">
-		<div class="row ">
-			<div class="col-lg-12  col-12">
-				<!-- Start Newsletter Form -->
-				<div class="subscribe-text ">
-					<h6>Nous contacter</h6>
-					<p>(+228) 92006666 / 99922020 / 91620204 / 90020044</p>
-					<p>Mail : <a href="mailto:congres.sotoped@gmail.com">congres.sotoped@gmail.com</a></p>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
+					<img src="img/section-img.png" alt="#">
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 				</div>
-				<!-- End Newsletter Form -->
-
 			</div>
 		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-12">
+				<div class="owl-carousel portfolio-slider">
+					<div class="single-pf">
+						<img src="img/pf1.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+					<div class="single-pf">
+						<img src="img/pf2.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+					<div class="single-pf">
+						<img src="img/pf3.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+					<div class="single-pf">
+						<img src="img/pf4.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+					<div class="single-pf">
+						<img src="img/pf1.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+					<div class="single-pf">
+						<img src="img/pf2.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+					<div class="single-pf">
+						<img src="img/pf3.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+					<div class="single-pf">
+						<img src="img/pf4.jpg" alt="#">
+						<a href="portfolio-details.html" class="btn">View Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-<!-- /End Newsletter Area -->
-
-<!-- Footer Area -->
-<footer id="footer" class="footer ">
-	<!-- Footer Top -->
-	<div class="footer-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-12">
-					<div class="single-footer">
-						<h2>À propos</h2>
-						<p>La Société Togolaise de Pédiatrie (SOTOPED) est une entité nationale dont le but est
-							d'assurer une bonne éducation, une
-							bonne formation et une bonne santé pour tous les enfants. Ainsi, sa mission principale est
-							d'entreprendre et de mener
-							des perspectives et des actions ayant pour finalité de promouvoir des conditions de vie,
-							surtout sanitaires, stables
-							pour tout enfant</p>
-						<!-- Social -->
-						<ul class="social">
-							<li><a href="tel:+(228)22226195"><i class="icofont-phone"></i></a></li>
-							<li><a href="mailto:congres.sotoped@gmail.com"><i class="icofont-email"></i></a></li>
-						</ul>
-						<!-- End Social -->
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-12" style="display: none;">
-					<div class="single-footer f-link">
-						<h2>Quick Links</h2>
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<ul>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
-									</li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
-									</li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
-									</li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our
-											Cases</a></li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other
-											Links</a></li>
-								</ul>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12">
-								<ul>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a>
-									</li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a>
-									</li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a>
-									</li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
-									<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact
-											Us</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-12" style="display: none;">
-					<div class="single-footer">
-						<h2>Open Hours</h2>
-						<p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
-						<ul class="time-sidual">
-							<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-							<li class="day">Saturday <span>9.00-18.30</span></li>
-							<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-12" style="display: none;">
-					<div class="single-footer">
-						<h2>Newsletter</h2>
-						<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit
-							amet, consectetur adipisicing elit,</p>
-						<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-							<input name="email" placeholder="Email Address" class="common-input"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-								required="" type="email">
-							<button class="button"><i class="icofont icofont-paper-plane"></i></button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--/ End Footer Top -->
-	<!-- Copyright -->
-	<div class="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-12">
-					<div class="copyright-content">
-						<p>© Copyright 2025</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--/ End Copyright -->
-</footer>
-<!--/ End Footer Area -->
+<!--/ End portfolio -->
 
 <!-- jquery Min JS -->
 <script src="js/jquery.min.js"></script>

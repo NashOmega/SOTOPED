@@ -332,16 +332,82 @@ Version:	1.1
 	======================*/
 
   $(document).ready(function () {
-    // Sélectionner tous les liens du menu
-    let sections = $("section"); // Toutes les sections de la page
-    let navLinks = $(".nav.menu li a"); // Tous les liens du menu
+    let sections = $("section");
+    let navLinks = $(".nav.menu li a");
 
     $(".nav.menu li a").on("click", function () {
-      let thisNav = $(this); // Empêcher le comportement par défaut du lien
+      let thisNav = $(this);
       navLinks.parent().removeClass("active");
       thisNav.parent().addClass("active");
     });
+
+    $(".Inscription").on("click", function (e) {
+      e.preventDefault();
+      window.open("https://ee.kobotoolbox.org/MhqAyM2Y", "_blank");
+    });
+
+    $("#Claim").on("click", function (e) {
+      e.preventDefault();
+      window.open("https://forms.gle/qYwcPsiZXhpwx9Wn6", "_blank");
+    });
+
+    $("#CongressPr").on("click", function (e) {
+      e.preventDefault();
+      downloadFile(
+        "./assets/Programme du congrès.pdf",
+        "Programme du congrès.pdf"
+      );
+    });
+
+    $("#PainPreCongressPr").on("click", function (e) {
+      e.preventDefault();
+      downloadFile(
+        "./assets/Programme du Pré-congrès Douleur.pdf",
+        "Programme du Pré-congrès Douleur.pdf"
+      );
+    });
+
+    $("#NephrologicPreCongressPr").on("click", function (e) {
+      e.preventDefault();
+      downloadFile(
+        "./assets/Programme du Pré-congrès Néphrologie.pdf",
+        "Programme du Pré-congrès Néphrologie.pdf"
+      );
+    });
+
+    $(".AllCertificates").on("click", function (e) {
+      e.preventDefault();
+    });
+
+    $(".Hostels").on("click", function (e) {
+      e.preventDefault();
+    });
+
+    $(".resumeBook").on("click", function (e) {
+      e.preventDefault();
+      downloadFile(
+        "./assets/Livre des résumés du 6e congrès de la SOTOPED.pdf",
+        "Livre des résumés du 6e congrès de la SOTOPED.pdf"
+      );
+    });
+    $(".communicationModel").on("click", function (e) {
+      e.preventDefault();
+      downloadFile("./assets/Modèle eposter.pptx", "Modèle eposter.pptx");
+      downloadFile(
+        "./assets/Modèle PowerPoint de communication exigé_Congrès SOTOPED 2025.pptx",
+        "Modèle PowerPoint de communication exigé_Congrès SOTOPED 2025.pptx"
+      );
+    });
   });
+
+  function downloadFile(fileUrl, fileName) {
+    var link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 
   $(window).on("load", function () {
     // Désactiver le préchargeur
@@ -399,7 +465,7 @@ Version:	1.1
         let maxHeight = 0;
 
         // Trouver la plus grande hauteur
-        $("#speakersList .single-news .news-content").each(function () {
+        $("#speakersList .single-news .news-content .text").each(function () {
           let currentHeight = $(this).outerHeight();
           if (currentHeight > maxHeight) {
             maxHeight = currentHeight;
@@ -407,7 +473,7 @@ Version:	1.1
         });
 
         // Appliquer la hauteur maximale trouvée à tous les blocs
-        $("#speakersList .single-news .news-content").css(
+        $("#speakersList .single-news .news-content .text").css(
           "height",
           maxHeight + "px"
         );
