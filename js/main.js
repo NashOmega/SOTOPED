@@ -428,10 +428,23 @@ Version:	1.1
   $(window).on("load", function () {
     // Désactiver le préchargeur
     $(".preloader").addClass("preloader-deactivate");
+    congressResizer();
+    organsResizer();
+  });
 
+  window.addEventListener("resize", function () {
+    congressResizer();
+    organsResizer();
+  });
+
+  function congressResizer() {
     let maxHeight = 0;
+    let maxHeightTitle = 0;
+    let maxHeightTheme = 0;
+    let maxHeightPlace = 0;
+
     $(
-      ".schedule .container .schedule-inner .single-schedule .single-content p span"
+      ".schedule .container .schedule-inner .single-schedule .single-content p .description"
     ).each(function () {
       let currentHeight = $(this).outerHeight();
       if (currentHeight > maxHeight) {
@@ -439,9 +452,59 @@ Version:	1.1
       }
     });
 
-    // Appliquer la hauteur maximale trouvée à tous les blocs
     $(
-      ".schedule .container .schedule-inner .single-schedule .single-content p span"
-    ).css("height", maxHeight + "px");
-  });
+      ".schedule .container .schedule-inner .single-schedule .single-content h4"
+    ).each(function () {
+      let currentHeight = $(this).outerHeight();
+      if (currentHeight > maxHeightTheme) {
+        maxHeightTheme = currentHeight;
+      }
+    });
+
+    $(
+      ".schedule .container .schedule-inner .single-schedule .single-content p .place"
+    ).each(function () {
+      let currentHeight = $(this).outerHeight();
+      if (currentHeight > maxHeightPlace) {
+        maxHeightPlace = currentHeight;
+      }
+    });
+
+    $(
+      ".schedule .container .schedule-inner .single-schedule .single-content span .congressTitle"
+    ).each(function () {
+      let currentHeight = $(this).outerHeight();
+      if (currentHeight > maxHeightTitle) {
+        maxHeightTitle = currentHeight;
+      }
+    });
+
+    $(
+      ".schedule .container .schedule-inner .single-schedule .single-content p .description"
+    ).css("min-height", maxHeight + "px");
+
+    $(
+      ".schedule .container .schedule-inner .single-schedule .single-content h4"
+    ).css("min-height", maxHeightTheme + "px");
+
+    $(
+      ".schedule .container .schedule-inner .single-schedule .single-content span .congressTitle"
+    ).css("min-height", maxHeightTitle + "px");
+
+    $(
+      ".schedule .container .schedule-inner .single-schedule .single-content p .place"
+    ).css("min-height", maxHeightPlace + "px");
+  }
+
+  function organsResizer() {
+    let maxHeight = 0;
+    $("#organs .single-table .title").each(function () {
+      let currentHeight = $(this).outerHeight();
+      if (currentHeight > maxHeight) {
+        maxHeight = currentHeight;
+      }
+    });
+
+    $("#organs .single-table .title").css("min-height", maxHeight + "px");
+  }
 })(jQuery);

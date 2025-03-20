@@ -45,14 +45,42 @@
       // Insérer le HTML dans la div #hostelsList
       $("#hostelsList").html(hostelsHtml);
 
+      hostelReizer();
+    }).fail(function () {
+      console.error("Erreur lors du chargement du fichier JSON.");
+    });
+  });
+
+  window.addEventListener("resize", function () {
+    hostelReizer();
+  });
+
+  function hostelReizer() {
+    setTimeout(function () {
       setTimeout(function () {
+        let maxHeightTitle = 0;
+        let maxHeightPlace = 0;
         let maxHeightAdress = 0;
         let maxHeightContact = 0;
 
-        // Trouver la plus grande hauteur
+        $("#hostelsList .single-news .news-content a h2").each(function () {
+          let currentHeight = $(this).outerHeight();
+
+          if (currentHeight > maxHeightTitle) {
+            maxHeightTitle = currentHeight;
+          }
+        });
+
+        $("#hostelsList .single-news .news-content .place").each(function () {
+          let currentHeight = $(this).outerHeight();
+
+          if (currentHeight > maxHeightPlace) {
+            maxHeightPlace = currentHeight;
+          }
+        });
+
         $("#hostelsList .single-news .news-content .hostelAdress").each(
           function () {
-            console.log();
             let currentHeight = $(this).outerHeight();
 
             if (currentHeight > maxHeightAdress) {
@@ -63,7 +91,6 @@
 
         $("#hostelsList .single-news .news-content .hostelContact").each(
           function () {
-            console.log();
             let currentHeight = $(this).outerHeight();
 
             if (currentHeight > maxHeightContact) {
@@ -71,19 +98,27 @@
             }
           }
         );
-        // Appliquer la hauteur maximale trouvée à tous les blocs
+
+        $("#hostelsList .single-news .news-content a h2").css(
+          "min-height",
+          maxHeightTitle + "px"
+        );
+
+        $("#hostelsList .single-news .news-content .place").css(
+          "min-height",
+          maxHeightPlace + "px"
+        );
+
         $("#hostelsList .single-news .news-content .hostelAdress").css(
-          "height",
+          "min-height",
           maxHeightAdress + "px"
         );
 
         $("#hostelsList .single-news .news-content .hostelContact").css(
-          "height",
+          "min-height",
           maxHeightAdress + "px"
         );
       }, 200);
-    }).fail(function () {
-      console.error("Erreur lors du chargement du fichier JSON.");
-    });
-  });
+    }, 200);
+  }
 })(jQuery);
