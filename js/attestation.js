@@ -34,10 +34,12 @@ import config from "./config.js";
         return;
       }
 
+      console.log(`${config.API_BASE_URL}/${config.Certificate_URL}/${code}`);
       $.ajax({
         url: `${config.API_BASE_URL}/${config.Certificate_URL}/${code}`,
         method: "GET",
         success: function (response) {
+          console.log(response);
           if (response) {
             $("#codeModal").remove();
             showCertificateOptions(response, code);
@@ -56,6 +58,7 @@ import config from "./config.js";
           }
         },
         error: function (response) {
+          console.log(response);
           Toastify({
             text:
               response?.responseJSON?.errorMessage ||
