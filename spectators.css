@@ -1,0 +1,24 @@
+#spectatorSection table tr,
+#spectatorSection table td {
+  vertical-align: middle;
+}
+
+#spectatorSection table .delete-btn {
+  color: red;
+  padding: 0 5px;
+}
+
+#spectatorSection table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#spectatorSection table .edit-btn {
+  color: green;
+  padding: 0 5px;
+}
+
+.form-check-input {
+  margin-left: 0;
+  margin-top: 6px;
+}

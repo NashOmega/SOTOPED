@@ -425,6 +425,17 @@ Version:	1.1
     }, 100);
   }
 
+  $(document).ready(function () {
+    $.ajaxSetup({
+      beforeSend: function () {
+        showLoader();
+      },
+      complete: function () {
+        hideLoader();
+      },
+    });
+  });
+
   $(window).on("load", function () {
     // Désactiver le préchargeur
     $(".preloader").addClass("preloader-deactivate");
@@ -506,5 +517,19 @@ Version:	1.1
     });
 
     $("#organs .single-table .title").css("min-height", maxHeight + "px");
+  }
+
+  function showLoader() {
+    $("body").append(`
+        <div id="loaderOverlay" class="loader-overlay">
+            <div class="ajax-loader"></div>
+        </div>
+    `);
+    $("body").addClass("loading");
+  }
+
+  function hideLoader() {
+    $("#loaderOverlay").remove();
+    $("body").removeClass("loading");
   }
 })(jQuery);
